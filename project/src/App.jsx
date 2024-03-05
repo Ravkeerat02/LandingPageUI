@@ -1,11 +1,19 @@
-import { useState } from "react";
+import ButtonGradient from "./assets/svg/ButtonGradient";
+import Button from "./components/Button";
 
-function App() {
+const App = () => {
   return (
     <>
-      <h1 className="font-bold underline"> tEST</h1>
+      <h1 className="text-3xl font-bold underline"> tEST</h1>
+      {/* gradient effect for btn */}
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Button className="mt-5" href="#login">
+          Something
+        </Button>
+      </div>
+      <ButtonGradient />
     </>
   );
-}
+};
 
 export default App;
