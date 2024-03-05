@@ -1,11 +1,11 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
 const Button = ({ className, href, onClick, children, px, white }) => {
-  const classes = `button relative inline-flex items-center justify-center h14 transition-colors hover:text-color-1 ${
+  const classes = `button relative inline-flex items-center justify-center h-14 transition-colors hover:text-color-1 ${
     px || "px-7"
   } ${white ? "text-n-8" : "text-n-1"} ${className || ""} `;
 
-  const spanClasses = "relative z-20";
+  const spanClasses = "relative z-20 flex items-center justify-center"; // Center the text horizontally and vertically
 
   const renderButton = () => (
     <button className={classes} onClick={onClick} href={href}>
@@ -21,7 +21,7 @@ const Button = ({ className, href, onClick, children, px, white }) => {
     </a>
   );
 
-  // conditional statemnt for making the button appear
+  // conditional statement for making the button appear
   return href ? renderLink() : renderButton();
 };
 
