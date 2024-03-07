@@ -49,7 +49,3 @@ npm run dev
 ```
 
 Test(run) the application : Open your browser and navigate to http://localhost:3000 to view the landing page.
-
-```
-
-```
