@@ -8,7 +8,7 @@ const Footer = () => {
         <p className="caption text-n-4 lg:block">
           © {new Date().getFullYear()}. All rights reserved.
         </p>
-
+        {/* loop to display the icons */}
         <ul className="flex gap-5 flex-wrap">
           {socials.map((item) => (
             <a
